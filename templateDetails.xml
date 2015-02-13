@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>doctor</name>
+	<creationDate>13 Fabuary 2015</creationDate>
+	<author>Dmytro Sytnik (VanArman)</author>
+	<authorEmail>dimaarman@gmail.com</authorEmail>
+	<version>3.0.0</version>
+	<description>Template for site Doctor.ent</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>logo</position>
+	</positions>
+</extension>
