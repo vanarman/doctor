@@ -1,3 +1,29 @@
 @orange = #d69329;
 @grey = #a3a3a3;
 @black = #2c2c31;
+
+@footer-heigth = 100px;
+
+@footer-bg = #f00;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: #999;
+}
+main {
+    padding-bottom: @footer-height;
+}
+.footer {
+    height: @footer-height;
+    margin-top: @footer-height * -1;
+    background: @footer-bg;
+}

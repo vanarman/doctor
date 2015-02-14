@@ -18,28 +18,30 @@
 	?>
 </head>
 <body>
-    <header>
-        <div id="top">
-            <div class="logo"></div>
-            <div class="contactTop"></div>
-        </div>
-        <nav>
+    <div id="page">
+        <header>
+            <div id="top">
+                <div class="logo"></div>
+                <div class="contactTop"></div>
+            </div>
+            <nav>
 
-        </nav>
-        <div id="bottom">
-            <div class="slider"></div>
-            <div class="action"></div>
-        </div>
-    </header>
-    <main>
-        <div id="wrap">
-            <div class="content"></div>
-            <div class="video"></div>
-        </div>
-        <aside>
+            </nav>
+            <div id="bottom">
+                <div class="slider"></div>
+                <div class="action"></div>
+            </div>
+        </header>
+        <main>
+            <div id="wrap">
+                <div class="content"></div>
+                <div class="video"></div>
+            </div>
+            <aside>
 
-        </aside>
-    </main>
+            </aside>
+        </main>
+    </div>
     <footer>
         <div class="addressFooter"></div>
         <div class="contactFooter"></div>
