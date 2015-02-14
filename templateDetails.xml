@@ -18,5 +18,15 @@
 
 	<positions>
 		<position>logo</position>
+        <position>contactTop</position>
+        <position>menu</position>
+        <position>topSlider</position>
+        <position>action</position>
+        <position>rightSide</position>
+        <position>logo</position>
+        <position>video</position>
+        <position>addressFooter</position>
+        <position>contactFooter</position>
+        <position>counterFooter</position>
 	</positions>
 </extension>
