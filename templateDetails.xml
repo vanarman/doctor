@@ -10,8 +10,7 @@
 
 	<files>
 		<folder>css</folder>
-		<folder>images</folder>
-		<filename>index.html</filename>
+		<folder>img</folder>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
@@ -23,7 +22,6 @@
         <position>topSlider</position>
         <position>action</position>
         <position>rightSide</position>
-        <position>logo</position>
         <position>video</position>
         <position>addressFooter</position>
         <position>contactFooter</position>

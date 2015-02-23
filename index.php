@@ -9,7 +9,6 @@
 		JHtmlBootstrap::loadCss(false);
 		$doc 		= JFactory::getDocument();
 		$user 		= JFactory::getUser();
-		$config 	= JFactory::getConfig();
 		$app        = JFactory::getApplication();
 		$template   = $app->getTemplate(true);
 		$params     = $template->params;
@@ -22,30 +21,64 @@
         <header>
             <div id="top">
                 <div class="logo"></div>
-                <div class="contactTop"></div>
+                <?php if ($this->countModules('contactTop')) : ?>
+                    <div class="contactTop">
+                            <jdoc:include type="modules" name="contactTop" style="default"/>
+                    </div>
+                <?php endif; ?>
             </div>
-            <nav>
-
-            </nav>
+            <?php if ($this->countModules('menu')) : ?>
+                <nav class="main-menu">
+                        <jdoc:include type="modules" name="menu" style="default"/>
+                </nav>
+            <?php endif; ?>
+            <?php /*if (($this->countModules('topSlider')) or ($this->countModules('action'))) :*/ ?>
             <div id="bottom">
-                <div class="slider"></div>
-                <div class="action"></div>
+                <?php if ($this->countModules('topSlider')) : ?>
+                    <div class="slider">
+                            <jdoc:include type="modules" name="topSlider" style="default"/>
+                    </div>
+                <?php endif; ?>
+                <?php if ($this->countModules('action')) : ?>
+                    <div class="action">
+                            <jdoc:include type="modules" name="action" style="default"/>
+                    </div>
+                <?php endif; ?>
             </div>
+            <?php /*endif;*/ ?>
         </header>
         <main>
             <div id="wrap">
-                <div class="content"></div>
-                <div class="video"></div>
+                <div class="content"><jdoc:include type="component" /></div>
+                <?php if ($this->countModules('video')) : ?>
+                    <div class="video">
+                            <jdoc:include type="modules" name="video" style="default"/>
+                    </div>
+                <?php endif; ?>
             </div>
-            <aside>
-
-            </aside>
+            <?php if ($this->countModules('rightSide')) : ?>
+                <aside>
+                        <jdoc:include type="modules" name="rightSide" style="default"/>
+                </aside>
+            <?php endif; ?>
         </main>
     </div>
     <footer>
-        <div class="addressFooter"></div>
-        <div class="contactFooter"></div>
-        <div class="counterFooter"></div>
+        <?php if ($this->countModules('addressFooter')) : ?>
+            <div class="addressFooter">
+                    <jdoc:include type="modules" name="addressFooter" style="default"/>
+            </div>
+        <?php endif; ?>
+        <?php if ($this->countModules('contactFooter')) : ?>
+            <div class="contactFooter">
+                    <jdoc:include type="modules" name="contactFooter" style="default"/>
+            </div>
+        <?php endif; ?>
+        <?php if ($this->countModules('counterFooter')) : ?>
+            <div class="counterFooter">
+                    <jdoc:include type="modules" name="counterFooter" style="default"/>
+            </div>
+        <?php endif; ?>
     </footer>
 </body>
 </html>
