@@ -83,7 +83,7 @@
         <script>
         jQuery(document).ready(function($){
             $('.moduletable_form').find('.custom_form').addClass('none');
-            $('.moduletable_form').find('.title').on('click', function() {
+            $('.moduletable_form').find('.title').css('cursor','pointer').on('click', function() {
                     $('.moduletable_form').find('.custom_form').toggleClass('none');
             });
         });

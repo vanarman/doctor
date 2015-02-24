@@ -80,6 +80,34 @@ header {
   font-weight: bold;
   color: #d69329;
 }
+.mod-languages,
+#register {
+  display: inline-block;
+  vertical-align: middle;
+}
+#register {
+  list-style: none;
+  margin-right: 20px;
+}
+#register li {
+  display: inline-block;
+  margin-right: 5px;
+}
+#register li:first-child {
+  border-right: 1px solid #a3a3a3;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+#register li a {
+  text-decoration: none;
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.action p.flex-caption {
+  height: 45px;
+  margin-bottom: -2px;
+  padding-top: 12px;
+}
 nav.main-menu {
   margin: 30px auto;
 }
@@ -248,12 +276,18 @@ main #wrap h4,
 main #wrap h5 {
   color: #d69329;
 }
+main #wrap p {
+  font-size: 85%;
+  line-height: 150%;
+  text-indent: 15px;
+  padding-bottom: 7px;
+}
 main #wrap a {
   color: #d69329;
 }
-main #wrap ul > li,
-main #wrap ol > li {
-  padding-left: 40px;
+main #wrap ul,
+main #wrap li {
+  padding-left: 30px;
 }
 main #wrap .itemListView {
   text-align: justify;
@@ -262,6 +296,20 @@ main #wrap .itemListView {
 }
 main #wrap .itemListView .catItemTitle a {
   font-size: 80%;
+}
+main #wrap div.catItemHeader h3.catItemTitle {
+  line-height: normal;
+  padding: 0;
+}
+main #wrap div.catItemBody {
+  padding: 0;
+  text-indent: 15px;
+  font-size: 100%;
+  line-height: 120%;
+}
+main #wrap div.catItemReadMore {
+  display: block;
+  text-align: right;
 }
 main #wrap .k2Pagination ul > li {
   padding: 0 5px;
@@ -324,6 +372,42 @@ main .content {
   padding: 20px 10px;
   text-align: justify;
 }
+main .content .login {
+  width: 450px;
+  margin: 0 auto;
+}
+main .content .login .control-group {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+  padding: 5px;
+}
+main .content .login .control-group .control-label,
+main .content .login .control-group .controls {
+  display: inline-block;
+  vertical-align: middle;
+}
+main .content ul.nav.nav-tabs.nav-stacked {
+  list-style: none;
+}
+main .content ul.nav.nav-tabs.nav-stacked li {
+  display: inline-block;
+  margin-top: 10px;
+}
+main .content .k2AccountPage .k2AccountPageNotice {
+  font-size: 50%;
+  color: #d69329;
+  text-align: right;
+}
+main .content .k2AccountPage table.admintable {
+  margin: 0 auto;
+}
+main .content .k2AccountPage table.admintable .key {
+  color: #2c2c31;
+}
+main .content .k2AccountPage table.admintable td {
+  color: #d69329;
+}
 .moduletable_form h3 {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -361,18 +445,6 @@ main .content {
 .moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit {
   float: none;
 }
-.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit button {
-  padding: 5px 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #d69329;
-  font-size: 14px;
-  border: none;
-}
-.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit button:hover {
-  background-color: #dea954;
-}
 footer {
   height: 130px;
   min-width: 1000px;
@@ -394,4 +466,16 @@ footer {
   font-size: 70%;
   padding-top: 20px;
   line-height: 130%;
+}
+button {
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #d69329;
+  font-size: 14px;
+  border: none;
+}
+button:hover {
+  background-color: #dea954;
 }

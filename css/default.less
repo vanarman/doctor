@@ -108,6 +108,39 @@ header {
         }
     }
 }
+
+.mod-languages, #register {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#register {
+    list-style: none;
+    margin-right: 20px;
+
+    li {
+        display: inline-block;
+        margin-right: 5px;
+
+        &:first-child{
+            border-right: 1px solid @grey;
+            padding-right: 5px;
+            padding-bottom: 3px;
+        }
+        a {
+            text-decoration: none;
+            color: @grey;
+            font-size: 12px;
+        }
+    }
+}
+
+.action p.flex-caption {
+    height: 45px;
+    margin-bottom: -2px;
+    padding-top: 12px;
+}
+
 nav.main-menu {
     margin: 30px auto;
 
@@ -252,11 +285,19 @@ main {
             color: @orange;
         }
 
+        p {
+            font-size: 85%;
+            line-height: 150%;
+            text-indent: 15px;
+            padding-bottom: 7px;
+        }
+
         a {
             color: @orange;
         }
-        ul > li, ol > li {
-            padding-left: 40px;
+
+        ul, li {
+            padding-left: 30px;
         }
 
         .itemListView {
@@ -269,10 +310,26 @@ main {
             }
         }
 
+        div.catItemHeader h3.catItemTitle {
+            line-height: normal;
+            padding: 0;
+        }
+
+        div.catItemBody {
+            padding: 0;
+            text-indent: 15px;
+            font-size: 100%;
+            line-height: 120%;
+        }
+
+        div.catItemReadMore {
+            display: block;
+            text-align: right;
+        }
+
         .k2Pagination ul > li {
             padding: 0 5px;
         }
-
     }
     aside {
         display: inline-block;
@@ -329,6 +386,46 @@ main {
         background-color: #f6f6f6;
         padding: 20px 10px;
         text-align: justify;
+
+        .login {
+            width: 450px;
+            margin: 0 auto;
+
+            .control-group {
+                display: inline-block;
+                width: 47%;
+                vertical-align: middle;
+                padding: 5px;
+                .control-label, .controls {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        ul.nav.nav-tabs.nav-stacked {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+        .k2AccountPage {
+            .k2AccountPageNotice {
+                font-size: 50%;
+                color: @orange;
+                text-align: right;
+            }
+            table.admintable {
+                margin: 0 auto;
+                .key {
+                    color: @black;
+                }
+                td {
+                    color: @orange;
+                }
+            }
+        }
     }
 }
 
@@ -365,16 +462,6 @@ main {
         }
         .cw-mod-contact-light-clean-buttons .btn-submit {
             float: none;
-            button {
-                padding: 5px 10px;
-                .border-radius (5px);
-                background-color: @orange;
-                font-size: 14px;
-                border: none;
-                &:hover {
-                    background-color: lighten(@orange, 10%);
-                }
-            }
         }
     }
 }
@@ -395,4 +482,15 @@ footer {
     font-size: 70%;
     padding-top: 20px;
     line-height: 130%;
+}
+
+button {
+    padding: 5px 10px;
+    .border-radius (5px);
+    background-color: @orange;
+    font-size: 14px;
+    border: none;
+    &:hover {
+        background-color: lighten(@orange, 10%);
+    }
 }
