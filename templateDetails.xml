@@ -11,6 +11,7 @@
 	<files>
 		<folder>css</folder>
 		<folder>img</folder>
+		<folder>html</folder>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
 	</files>

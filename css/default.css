@@ -5,6 +5,10 @@
 /*End size*/
 /*Url's*/
 /*End url's*/
+.none {
+  display: none;
+  visibility: hidden;
+}
 * {
   padding: 0;
   margin: 0;
@@ -78,61 +82,6 @@ header {
 }
 nav.main-menu {
   margin: 30px auto;
-  /*ul > li {
-        list-style: none;
-        display: inline-block;
-        padding: 10px 15px;
-        border: 1px solid @border-menu;
-        .border-radius(10px);
-        .gradient(#dddbdb ,#c2bfbf);
-        position: relative;
-        z-index: 55;
-
-        a {
-            text-decoration: none;
-            color: @menu-text;
-            display: block;
-        }
-
-        &:hover {
-            background: none;
-            background-color: @orange;
-            position: relative;
-            z-index: 55;
-
-            ul {
-                display: block;
-                position: absolute;
-                margin: 0px 0 0 -16px;
-                z-index: 50;
-                background-color: @orange;
-
-                li {
-                    border: none;
-                    .border-radius(none);
-                    background: none;
-                }
-            }
-        }
-        & ul {
-            display: none;
-        }
-    }
-
-    li > ul {
-        display: none;
-    }
-
-    li:hover ul {
-        display: block;
-        position:absolute;
-        z-index: 999;
-        margin: 0 0 0 -17px;
-        padding-top: 10px;
-        border: 1px solid transparent;
-        .border-radius(0 0 10px 10px);
-        background-color: @orange;
-    }*/
 }
 nav.main-menu ul {
   text-align: left;
@@ -314,6 +263,9 @@ main #wrap .itemListView {
 main #wrap .itemListView .catItemTitle a {
   font-size: 80%;
 }
+main #wrap .k2Pagination ul > li {
+  padding: 0 5px;
+}
 main aside {
   display: inline-block;
   vertical-align: top;
@@ -371,6 +323,55 @@ main .content {
   background-color: #f6f6f6;
   padding: 20px 10px;
   text-align: justify;
+}
+.moduletable_form h3 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #a3a3a3;
+  padding: 10px 0;
+}
+.moduletable_form h3:before {
+  display: inline-block;
+  content: '';
+  width: 41px;
+  height: 47px;
+  background-image: url('../img/subscribe.png');
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.moduletable_form .custom_form {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #a3a3a3;
+  padding: 10px 0;
+  background-color: #f6f6f6;
+}
+.moduletable_form .custom_form #cw-mod-contact-light-clean label {
+  text-align: left;
+  text-indent: 7px;
+}
+.moduletable_form .custom_form .input,
+.moduletable_form .custom_form #cw-mod-contact-light-clean .copyme,
+.moduletable_form .custom_form #cw-mod-contact-light-clean .tos,
+.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons {
+  margin: 0;
+}
+.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit {
+  float: none;
+}
+.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit button {
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #d69329;
+  font-size: 14px;
+  border: none;
+}
+.moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit button:hover {
+  background-color: #dea954;
 }
 footer {
   height: 130px;

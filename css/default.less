@@ -13,6 +13,11 @@
 @img: "../img";
 /*End url's*/
 
+.none {
+    display: none;
+    visibility: hidden;
+}
+
 .border-radius (@arguments) {
         -webkit-border-radius: @arguments;
         -moz-border-radius: @arguments;
@@ -191,62 +196,6 @@ nav.main-menu {
         opacity: 1;
         visibility: visible;
     }
-
-    /*ul > li {
-        list-style: none;
-        display: inline-block;
-        padding: 10px 15px;
-        border: 1px solid @border-menu;
-        .border-radius(10px);
-        .gradient(#dddbdb ,#c2bfbf);
-        position: relative;
-        z-index: 55;
-
-        a {
-            text-decoration: none;
-            color: @menu-text;
-            display: block;
-        }
-
-        &:hover {
-            background: none;
-            background-color: @orange;
-            position: relative;
-            z-index: 55;
-
-            ul {
-                display: block;
-                position: absolute;
-                margin: 0px 0 0 -16px;
-                z-index: 50;
-                background-color: @orange;
-
-                li {
-                    border: none;
-                    .border-radius(none);
-                    background: none;
-                }
-            }
-        }
-        & ul {
-            display: none;
-        }
-    }
-
-    li > ul {
-        display: none;
-    }
-
-    li:hover ul {
-        display: block;
-        position:absolute;
-        z-index: 999;
-        margin: 0 0 0 -17px;
-        padding-top: 10px;
-        border: 1px solid transparent;
-        .border-radius(0 0 10px 10px);
-        background-color: @orange;
-    }*/
 }
 
 #bottom {
@@ -320,6 +269,10 @@ main {
             }
         }
 
+        .k2Pagination ul > li {
+            padding: 0 5px;
+        }
+
     }
     aside {
         display: inline-block;
@@ -376,6 +329,53 @@ main {
         background-color: #f6f6f6;
         padding: 20px 10px;
         text-align: justify;
+    }
+}
+
+.moduletable_form {
+    h3 {
+        &:before {
+            display: inline-block;
+            content: '';
+            width: 41px;
+            height: 47px;
+            background-image: url('@{img}/subscribe.png');
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        .border-radius (10px);
+        border: 1px solid @grey;
+        padding: 10px 0;
+    }
+
+    .custom_form {
+        .border-radius (10px);
+        border: 1px solid @grey;
+        padding: 10px 0;
+        background-color: #f6f6f6;
+
+        #cw-mod-contact-light-clean label {
+            text-align: left;
+            text-indent: 7px;
+        }
+
+        .input, #cw-mod-contact-light-clean .copyme, #cw-mod-contact-light-clean .tos, .cw-mod-contact-light-clean-buttons {
+            margin: 0;
+        }
+        .cw-mod-contact-light-clean-buttons .btn-submit {
+            float: none;
+            button {
+                padding: 5px 10px;
+                .border-radius (5px);
+                background-color: @orange;
+                font-size: 14px;
+                border: none;
+                &:hover {
+                    background-color: lighten(@orange, 10%);
+                }
+            }
+        }
     }
 }
 
