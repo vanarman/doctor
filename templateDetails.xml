@@ -9,6 +9,7 @@
 	<description>Template for site Doctor.ent</description>
 
 	<files>
+		<folder>js</folder>
 		<folder>css</folder>
 		<folder>img</folder>
 		<folder>html</folder>

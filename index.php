@@ -14,6 +14,7 @@
 		$params     = $template->params;
 
 		$doc->addStyleSheet('/templates/'. $template->template .'/css/default.css');
+        $doc->addScript('/templates/'. $template->template .'/js/page.js');
 	?>
 </head>
 <body>
@@ -88,5 +89,17 @@
             });
         });
     </script>
+    <div class="a2a_kit a2a_kit_size_48 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px; background: none;">
+        <a class="a2a_button_vk"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_google_plus"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_printfriendly"></a>
+        <a href="http://youtube.com/" target="_blank" style="line-height: normal;">
+            <img src="<?php echo '/templates/'. $template->template .'/img/youtube.png'; ?>" border="0" alt="Share" width="48" height="48"/>
+        </a>
+        <a class="a2a_button_mail_ru"></a>
+    </div>
 </body>
 </html>
