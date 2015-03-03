@@ -58,6 +58,7 @@ html, body {
     padding: 0px;
     text-align: center;
     background-image: url("@{img}/main-bg.png");
+    line-height: 20px;
 }
 #page {
     min-height: 100%;
@@ -67,16 +68,17 @@ html, body {
 
 }
 header {
-    .gradient(rgba(162, 163, 162, 0.0), rgba(162, 163, 162, 0.5));
-    border-bottom: 1px solid #fff;
-    .box-shadow(0 0 20px rgba(0,0,0,0.5));
+    //.gradient(rgba(162, 163, 162, 0.0), rgba(162, 163, 162, 0.5));
+    //border-bottom: 1px solid #fff;
+    //.box-shadow(0 0 20px rgba(0,0,0,0.5));
+    background-image: url(../img/top-grad.png);
     min-width: @doc-width;
 }
 #top {
     width: @doc-width;
     margin: 0 auto;
-    height: 106px;
-    padding: 20px 0;
+    height: 135px;
+    padding: 30px 0;
     .border-box();
 }
 .logo {
@@ -92,7 +94,7 @@ header {
     width: 250px;
     height: 66px;
     vertical-align: top;
-    padding-top: 20px;
+    padding-top: 0px;
     .border-box();
 
     .custom_contact {
@@ -135,14 +137,16 @@ header {
     }
 }
 
-.action p.flex-caption {
-    height: 45px;
-    margin-bottom: -2px;
-    padding-top: 12px;
+p.flex-caption {
+    position: relative;
+    height: 30px;
+    margin-top: -30px;
+    padding-top: 6px;
+    z-index: 100;
 }
 
 nav.main-menu {
-    margin: 30px auto;
+    margin: 10px auto 28px;
 
     ul {
         text-align: left;
@@ -155,10 +159,10 @@ nav.main-menu {
     ul li {
         display: inline-block;
         position: relative;
-        padding: 10px 15px;
+        padding: 7px 17px;
         border: 1px solid @border-menu;
         .border-radius(10px);
-        .gradient(#dddbdb ,#c2bfbf);
+        .gradient(lighten(#dddbdb, 5%), lighten(#c2bfbf, 5%));
         cursor: pointer;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
@@ -175,7 +179,7 @@ nav.main-menu {
         }
 
         &.active {
-            .gradient(lighten(#dddbdb, 5%), lighten(#c2bfbf, 5%));
+            .gradient(#dddbdb ,#c2bfbf);
         }
     }
 
@@ -191,7 +195,7 @@ nav.main-menu {
         padding: 0;
         position: absolute;
         z-index: 49;
-        top: 40px;
+        top: 33px;
         left: -1px;
         width: 200px;
         -webkit-box-shadow: none;
@@ -234,20 +238,18 @@ nav.main-menu {
 #bottom {
     width: @doc-width;
     margin: 0 auto;
-    padding: 0 0 20px;
+    padding: 0 0 10px;
 
     .flexslider {
-        height: 176px;
+        height: 200px;
         .border-radius(10px);
         border: 1px solid transparent;
         background: transparent;
     }
     p.flex-caption {
         .border-radius(0 0 10px 10px);
-        background-color: @orange;
+        background-color: rgba(222, 188, 131, 0.5);
         color: #fff;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-        opacity:.8;
         text-align: left;
     }
     img {
@@ -272,8 +274,8 @@ nav.main-menu {
 
 main {
     width: @doc-width;
-    margin: 20px auto 0;
-    padding-bottom: @footer-heigth;
+    margin: 10px auto 0;
+    padding-bottom: @footer-heigth + 20;
 
     #wrap {
         display: inline-block;
@@ -293,7 +295,7 @@ main {
         }
 
         a {
-            color: @orange;
+            color: #dd9b39;
         }
 
         ul, li {
@@ -306,7 +308,7 @@ main {
             line-height: 120%;
 
             .catItemTitle a {
-                font-size: 80%;
+                font-size: 65%;
             }
         }
 
@@ -384,7 +386,7 @@ main {
         .border-box ();
         .border-radius(10px);
         background-color: #f6f6f6;
-        padding: 20px 10px;
+        padding: 20px 10px 0;
         text-align: justify;
 
         .login {
@@ -444,6 +446,10 @@ main {
         .border-radius (10px);
         border: 1px solid @grey;
         padding: 10px 0;
+        width: 205px;
+        margin: 0 auto;
+        font-size: 100%;
+        font-weight: normal;
     }
 
     .custom_form {
@@ -466,8 +472,32 @@ main {
     }
 }
 
+.video > .videoCentralBlock {
+    h3 {
+        display: block;
+        border: 1px solid transparent;
+        .border-radius (5px);
+        background-color: @orange;
+        color: #fff !important;
+        padding: 6px;
+        font-weight: normal;
+        font-size: 100%;
+        margin: 5px 0;
+    }
+    padding: 10px 0 0;
+}
+
 
 footer {
+    .footerWrap {
+        width: @doc-width;
+        margin: 0 auto;
+        &:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+    }
     height: @footer-heigth;
     min-width: @doc-width;
     margin-top: @footer-heigth * -1;
@@ -477,11 +507,12 @@ footer {
 .addressFooter, .contactFooter, .counterFooter {
     display: inline-block;
     vertical-align: top;
-    width: 90% / 3;
+    width: 96% / 3;
     text-align: left;
-    font-size: 70%;
+    font-size: 80%;
     padding-top: 20px;
     line-height: 130%;
+    float: left;
 }
 
 button {
@@ -494,3 +525,5 @@ button {
         background-color: lighten(@orange, 10%);
     }
 }
+
+#k2Container, div.itemView{padding: 0;}

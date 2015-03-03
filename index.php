@@ -65,21 +65,23 @@
         </main>
     </div>
     <footer>
-        <?php if ($this->countModules('addressFooter')) : ?>
-            <div class="addressFooter">
-                    <jdoc:include type="modules" name="addressFooter" style="default"/>
-            </div>
-        <?php endif; ?>
-        <?php if ($this->countModules('contactFooter')) : ?>
-            <div class="contactFooter">
-                    <jdoc:include type="modules" name="contactFooter" style="default"/>
-            </div>
-        <?php endif; ?>
-        <?php if ($this->countModules('counterFooter')) : ?>
-            <div class="counterFooter">
-                    <jdoc:include type="modules" name="counterFooter" style="default"/>
-            </div>
-        <?php endif; ?>
+        <div class="footerWrap">
+            <?php if ($this->countModules('addressFooter')) : ?>
+                <div class="addressFooter">
+                        <jdoc:include type="modules" name="addressFooter" style="default"/>
+                </div>
+            <?php endif; ?>
+            <?php if ($this->countModules('contactFooter')) : ?>
+                <div class="contactFooter">
+                        <jdoc:include type="modules" name="contactFooter" style="default"/>
+                </div>
+            <?php endif; ?>
+            <?php if ($this->countModules('counterFooter')) : ?>
+                <div class="counterFooter">
+                        <jdoc:include type="modules" name="counterFooter" style="default"/>
+                </div>
+            <?php endif; ?>
+        </div>
     </footer>
         <script>
         jQuery(document).ready(function($){
@@ -89,7 +91,7 @@
             });
         });
     </script>
-    <div class="a2a_kit a2a_kit_size_48 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px; background: none;">
+    <div class="a2a_kit a2a_kit_size_40 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px; background: none;">
         <a class="a2a_button_vk"></a>
         <a class="a2a_button_facebook"></a>
         <a class="a2a_button_twitter"></a>
@@ -97,7 +99,7 @@
         <a class="a2a_button_email"></a>
         <a class="a2a_button_printfriendly"></a>
         <a href="http://youtube.com/" target="_blank" style="line-height: normal;">
-            <img src="<?php echo '/templates/'. $template->template .'/img/youtube.png'; ?>" border="0" alt="Share" width="48" height="48"/>
+            <img src="<?php echo '/templates/'. $template->template .'/img/youtube.png'; ?>" border="0" alt="Share" width="40" height="40"/>
         </a>
         <a class="a2a_button_mail_ru"></a>
     </div>

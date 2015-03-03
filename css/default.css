@@ -22,6 +22,7 @@ body {
   padding: 0px;
   text-align: center;
   background-image: url("../img/main-bg.png");
+  line-height: 20px;
 }
 #page {
   min-height: 100%;
@@ -30,23 +31,14 @@ body {
   width: 100%;
 }
 header {
-  background-color: rgba(162, 163, 162, 0);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(162, 163, 162, 0)), to(rgba(162, 163, 162, 0.5)));
-  background: -webkit-linear-gradient(top, rgba(162, 163, 162, 0), none, none, rgba(162, 163, 162, 0.5));
-  background: -moz-linear-gradient(top, rgba(162, 163, 162, 0), none, none, rgba(162, 163, 162, 0.5));
-  background: -ms-linear-gradient(top, rgba(162, 163, 162, 0), none, none, rgba(162, 163, 162, 0.5));
-  background: -o-linear-gradient(top, rgba(162, 163, 162, 0), none, none, rgba(162, 163, 162, 0.5));
-  border-bottom: 1px solid #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-image: url(../img/top-grad.png);
   min-width: 1000px;
 }
 #top {
   width: 1000px;
   margin: 0 auto;
-  height: 106px;
-  padding: 20px 0;
+  height: 135px;
+  padding: 30px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -64,7 +56,7 @@ header {
   width: 250px;
   height: 66px;
   vertical-align: top;
-  padding-top: 20px;
+  padding-top: 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -103,13 +95,15 @@ header {
   color: #a3a3a3;
   font-size: 12px;
 }
-.action p.flex-caption {
-  height: 45px;
-  margin-bottom: -2px;
-  padding-top: 12px;
+p.flex-caption {
+  position: relative;
+  height: 30px;
+  margin-top: -30px;
+  padding-top: 6px;
+  z-index: 100;
 }
 nav.main-menu {
-  margin: 30px auto;
+  margin: 10px auto 28px;
 }
 nav.main-menu ul {
   text-align: left;
@@ -121,17 +115,17 @@ nav.main-menu ul {
 nav.main-menu ul li {
   display: inline-block;
   position: relative;
-  padding: 10px 15px;
+  padding: 7px 17px;
   border: 1px solid #939391;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  background-color: #dddbdb;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dddbdb), to(#c2bfbf));
-  background: -webkit-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -moz-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -ms-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -o-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
+  background-color: #e9e8e8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9e8e8), to(#cecccc));
+  background: -webkit-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -moz-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -ms-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -o-linear-gradient(top, #e9e8e8, none, none, #cecccc);
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -147,12 +141,12 @@ nav.main-menu ul li a {
   color: #2c2c31;
 }
 nav.main-menu ul li.active {
-  background-color: #e9e8e8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e9e8e8), to(#cecccc));
-  background: -webkit-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -moz-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -ms-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -o-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background-color: #dddbdb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddbdb), to(#c2bfbf));
+  background: -webkit-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
+  background: -moz-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
+  background: -ms-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
+  background: -o-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
 }
 nav.main-menu ul li:hover {
   background-color: #e2b369;
@@ -171,7 +165,7 @@ nav.main-menu ul li ul {
   padding: 0;
   position: absolute;
   z-index: 49;
-  top: 40px;
+  top: 33px;
   left: -1px;
   width: 200px;
   -webkit-box-shadow: none;
@@ -221,10 +215,10 @@ nav.main-menu ul li:hover ul {
 #bottom {
   width: 1000px;
   margin: 0 auto;
-  padding: 0 0 20px;
+  padding: 0 0 10px;
 }
 #bottom .flexslider {
-  height: 176px;
+  height: 200px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -235,10 +229,8 @@ nav.main-menu ul li:hover ul {
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
-  background-color: #d69329;
+  background-color: rgba(222, 188, 131, 0.5);
   color: #fff;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  opacity: .8;
   text-align: left;
 }
 #bottom img {
@@ -260,8 +252,8 @@ nav.main-menu ul li:hover ul {
 }
 main {
   width: 1000px;
-  margin: 20px auto 0;
-  padding-bottom: 130px;
+  margin: 10px auto 0;
+  padding-bottom: 150px;
 }
 main #wrap {
   display: inline-block;
@@ -283,7 +275,7 @@ main #wrap p {
   padding-bottom: 7px;
 }
 main #wrap a {
-  color: #d69329;
+  color: #dd9b39;
 }
 main #wrap ul,
 main #wrap li {
@@ -295,7 +287,7 @@ main #wrap .itemListView {
   line-height: 120%;
 }
 main #wrap .itemListView .catItemTitle a {
-  font-size: 80%;
+  font-size: 65%;
 }
 main #wrap div.catItemHeader h3.catItemTitle {
   line-height: normal;
@@ -369,7 +361,7 @@ main .content {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #f6f6f6;
-  padding: 20px 10px;
+  padding: 20px 10px 0;
   text-align: justify;
 }
 main .content .login {
@@ -414,6 +406,10 @@ main .content .k2AccountPage table.admintable td {
   border-radius: 10px;
   border: 1px solid #a3a3a3;
   padding: 10px 0;
+  width: 205px;
+  margin: 0 auto;
+  font-size: 100%;
+  font-weight: normal;
 }
 .moduletable_form h3:before {
   display: inline-block;
@@ -445,6 +441,22 @@ main .content .k2AccountPage table.admintable td {
 .moduletable_form .custom_form .cw-mod-contact-light-clean-buttons .btn-submit {
   float: none;
 }
+.video > .videoCentralBlock {
+  padding: 10px 0 0;
+}
+.video > .videoCentralBlock h3 {
+  display: block;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #d69329;
+  color: #fff !important;
+  padding: 6px;
+  font-weight: normal;
+  font-size: 100%;
+  margin: 5px 0;
+}
 footer {
   height: 130px;
   min-width: 1000px;
@@ -456,16 +468,26 @@ footer {
   background: -ms-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
   background: -o-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
 }
+footer .footerWrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+footer .footerWrap:after {
+  display: block;
+  clear: both;
+  content: '';
+}
 .addressFooter,
 .contactFooter,
 .counterFooter {
   display: inline-block;
   vertical-align: top;
-  width: 30%;
+  width: 32%;
   text-align: left;
-  font-size: 70%;
+  font-size: 80%;
   padding-top: 20px;
   line-height: 130%;
+  float: left;
 }
 button {
   padding: 5px 10px;
@@ -478,4 +500,8 @@ button {
 }
 button:hover {
   background-color: #dea954;
+}
+#k2Container,
+div.itemView {
+  padding: 0;
 }
