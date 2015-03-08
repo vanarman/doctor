@@ -56,7 +56,9 @@
                             <jdoc:include type="modules" name="video" style="default"/>
                     </div>
                 <?php endif; ?>
+                <div class="buttonToTop" style="display:none;">Вверх</div>
             </div>
+            <div class="buttonToTop" style="display:none;">Вверх</div>
             <?php if ($this->countModules('rightSide')) : ?>
                 <aside>
                         <jdoc:include type="modules" name="rightSide" style="default"/>
@@ -89,7 +91,20 @@
             $('.moduletable_form').find('.title').css('cursor','pointer').on('click', function() {
                     $('.moduletable_form').find('.custom_form').toggleClass('none');
             });
+            
+            $(".buttonToTop").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#page").offset().top
+                }, 1000);
+            });
         });
+        jQuery(function(f){
+            var element = f('.buttonToTop');
+            f(window).scroll(function(){
+                element['fade'+ (f(this).scrollTop() > 450 ? 'In': 'Out')](200);          
+            });
+        });
+
     </script>
     <div class="a2a_kit a2a_kit_size_40 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px; background: none;">
         <a class="a2a_button_vk"></a>

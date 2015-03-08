@@ -115,17 +115,12 @@ nav.main-menu ul {
 nav.main-menu ul li {
   display: inline-block;
   position: relative;
-  padding: 7px 17px;
+  padding: 7px 28px;
   border: 1px solid #939391;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #e9e8e8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e9e8e8), to(#cecccc));
-  background: -webkit-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -moz-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -ms-linear-gradient(top, #e9e8e8, none, none, #cecccc);
-  background: -o-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-image: url(../img/menu.png);
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -134,27 +129,22 @@ nav.main-menu ul li {
   transition: all 0.2s;
   z-index: 50;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 nav.main-menu ul li a {
   text-decoration: none;
   color: #2c2c31;
 }
 nav.main-menu ul li.active {
-  background-color: #dddbdb;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dddbdb), to(#c2bfbf));
-  background: -webkit-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -moz-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -ms-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
-  background: -o-linear-gradient(top, #dddbdb, none, none, #c2bfbf);
+  background-color: #e9e8e8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9e8e8), to(#cecccc));
+  background: -webkit-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -moz-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -ms-linear-gradient(top, #e9e8e8, none, none, #cecccc);
+  background: -o-linear-gradient(top, #e9e8e8, none, none, #cecccc);
 }
 nav.main-menu ul li:hover {
-  background-color: #e2b369;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e2b369), to(#d69329));
-  background: -webkit-linear-gradient(top, #e2b369, none, none, #d69329);
-  background: -moz-linear-gradient(top, #e2b369, none, none, #d69329);
-  background: -ms-linear-gradient(top, #e2b369, none, none, #d69329);
-  background: -o-linear-gradient(top, #e2b369, none, none, #d69329);
+  background-image: url(../img/menu-hovered.png);
 }
 nav.main-menu ul li:hover.deeper {
   -webkit-border-radius: 10px 10px 0 0;
@@ -229,7 +219,7 @@ nav.main-menu ul li:hover ul {
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
-  background-color: rgba(222, 188, 131, 0.5);
+  background-image: url(../img/slider.png);
   color: #fff;
   text-align: left;
 }
@@ -253,7 +243,7 @@ nav.main-menu ul li:hover ul {
 main {
   width: 1000px;
   margin: 10px auto 0;
-  padding-bottom: 150px;
+  padding-bottom: 146px;
 }
 main #wrap {
   display: inline-block;
@@ -405,7 +395,7 @@ main .content .k2AccountPage table.admintable td {
   -moz-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #a3a3a3;
-  padding: 10px 0;
+  padding: 5px 0;
   width: 205px;
   margin: 0 auto;
   font-size: 100%;
@@ -458,15 +448,10 @@ main .content .k2AccountPage table.admintable td {
   margin: 5px 0;
 }
 footer {
-  height: 130px;
+  height: 126px;
   min-width: 1000px;
-  margin-top: -130px;
-  background-color: rgba(145, 143, 156, 0.1);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 143, 156, 0.1)), to(#918f9c));
-  background: -webkit-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
-  background: -moz-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
-  background: -ms-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
-  background: -o-linear-gradient(top, rgba(145, 143, 156, 0.1), none, none, #918f9c);
+  margin-top: -126px;
+  background-image: url(../img/footer.png);
 }
 footer .footerWrap {
   width: 1000px;
@@ -504,4 +489,19 @@ button:hover {
 #k2Container,
 div.itemView {
   padding: 0;
+}
+.buttonToTop {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 50px;
+  height: 23px;
+  border: 1px solid #000;
+  background-color: #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 7px 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
