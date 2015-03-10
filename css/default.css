@@ -208,20 +208,21 @@ nav.main-menu ul li:hover ul {
   padding: 0 0 10px;
 }
 #bottom .flexslider {
-  height: 200px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid transparent;
-  background: transparent;
+  background: transparent !important;
 }
-#bottom p.flex-caption {
+#bottom .flex-caption {
   -webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
   background-image: url(../img/slider.png);
-  color: #fff;
+  color: #fff !important;
   text-align: left;
+  padding: 5px 15px;
+  height: 20px;
 }
 #bottom img {
   height: 176px !important;

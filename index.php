@@ -16,6 +16,7 @@
 		$doc->addStyleSheet('/templates/'. $template->template .'/css/default.css');
         $doc->addScript('/templates/'. $template->template .'/js/page.js');
 	?>
+    <link href="<?php echo '/templates/'. $template->template .'/favicon.png'?>" rel="icon" type="image/x-icon" />
 </head>
 <body>
     <div id="page">
