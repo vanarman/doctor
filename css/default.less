@@ -266,12 +266,14 @@ nav.main-menu {
         display: inline-block;
         padding-right: 14px;
         vertical-align: bottom;
+        margin: 0 0 20px;
     }
 
     .action {
         width: 290px;
         display: inline-block;
         vertical-align: bottom;
+        margin: 0 0 20px;
     }
 }
 
@@ -342,7 +344,7 @@ main {
         vertical-align: top;
         width: 300px;
 
-        div {
+        &>div {
             margin: 10px 0;
 
             &:first-child {margin-top:0;}
@@ -456,22 +458,25 @@ main {
         font-weight: normal;
     }
 
-    .custom_form {
+    .jsn-uniform {
         .border-radius (10px);
         border: 1px solid @grey;
         padding: 10px 0;
         background-color: #f6f6f6;
 
-        #cw-mod-contact-light-clean label {
-            text-align: left;
-            text-indent: 7px;
+        input {
+          height: 25px;
+          border-radius: 5px;
+          border: 1px solid transparent;
         }
-
-        .input, #cw-mod-contact-light-clean .copyme, #cw-mod-contact-light-clean .tos, .cw-mod-contact-light-clean-buttons {
-            margin: 0;
+        textarea {
+            border-radius: 5px;
+            border: 1px solid transparent;
         }
-        .cw-mod-contact-light-clean-buttons .btn-submit {
-            float: none;
+        .control-group {
+          padding: 9px 7px 2px !important;
+          margin: 0 !important;
+          line-height: 1.5em;
         }
     }
 }
@@ -546,4 +551,7 @@ button {
     border-radius: 5px;
     padding: 7px 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.jsn-text-center {
+    display: none;
 }
